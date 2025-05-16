@@ -70,7 +70,7 @@ MIN_VALUE=1
 LOCAL_FILE_PATH=planilha.xlsx
 ```
 
-#### Execução
+### Execução
 
 Execute o script principal:
 ```bash
