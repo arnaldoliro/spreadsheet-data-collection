@@ -3,7 +3,6 @@
 O **Coletor de Dados de Planilhas** é um script Python desenvolvido para automatizar a extração e filtragem de informações de planilhas, seja do Google Sheets ou de arquivos locais no formato `.xlsx`.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 📝 Descrição
 
@@ -71,7 +70,7 @@ MIN_VALUE=1
 LOCAL_FILE_PATH=planilha.xlsx
 ```
 
-Execução
+#### Execução
 
 Execute o script principal:
 ```bash
@@ -99,4 +98,4 @@ python main.py
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
 ## 📧 Contato
-Para dúvidas ou sugestões, entre em contato pelo email: [dinholiro@gmail.com]
+Para dúvidas ou sugestões, entre em contato pelo email: dinholiro@gmail.com
