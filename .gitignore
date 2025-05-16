@@ -1,0 +1,15 @@
+# Ignorar credenciais sensíveis
+credenciais.json
+.env
+
+# Pastas padrão do Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual (caso use venv)
+venv/
+.env/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
