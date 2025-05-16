@@ -1,19 +1,15 @@
-from sheets_clients import get_sheets_client
-from collector import collect_names
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
+from utils.loader import load_data
 
 def main():
-    client = get_sheets_client()
-    sheet_name = os.getenv("GOOGLE_SHEET_NAME")
-    worksheet_name = os.getenv("GOOGLE_SHEET_WORKSHEET")
+    data = load_data()
 
-    sheet = client.open(sheet_name).worksheet(worksheet_name)
-    names = collect_names(sheet)
-
-    print("Nomes encontrados:", names)
+    for line in data:
+        try:
+            column_value = float(line[20])  # Coluna U
+            if column_value >= 1:
+                print(line[0])  # Coluna A
+        except (IndexError, ValueError, TypeError):
+            continue
 
 if __name__ == "__main__":
     main()
